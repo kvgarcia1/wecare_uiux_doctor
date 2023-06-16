@@ -4,7 +4,6 @@ import 'package:unicons/unicons.dart';
 import './profile.dart';
 import './messages.dart';
 import './currentSession.dart';
-import './journal.dart';
 import './patientRecords.dart';
 
 void main() {
