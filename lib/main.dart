@@ -8,6 +8,7 @@ import './session.dart';
 import './messages.dart';
 import './currentSession.dart';
 import './journal.dart';
+import './patientRecords.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Widget> _pages = <Widget>[
   HomePage(),
   ProfilePage(),
-  GeneratorPage(),
+  PatientRecordsPage(),
   MessagesPage(),
 ];
 
