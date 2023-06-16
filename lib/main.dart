@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:unicons/unicons.dart';
-import './generator.dart';
 import './profile.dart';
-// import './dashboard.dart';
-import './session.dart';
 import './messages.dart';
 import './currentSession.dart';
 import './journal.dart';
@@ -13,6 +10,8 @@ import './patientRecords.dart';
 void main() {
   runApp(MyApp());
 }
+
+class MyAppState extends ChangeNotifier {}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -175,13 +174,9 @@ class HomePage extends StatelessWidget {
                         )
                       ),
                     ),
-
-
                     Container(
                       alignment: Alignment.bottomLeft,
                       height:250,
-                      //padding: const EdgeInsets.only(left: 0.0),
-                      
                       child: ElevatedButton(
                         onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) => CurrentSessionPage()));

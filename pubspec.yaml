@@ -1,4 +1,4 @@
-name: wecare_uiux
+name: wecare_uiux_doctor
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -20,6 +20,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_nav_bar: ^5.0.6
   unicons: any
+  # interactive_chart: ^0.3.4
+  syncfusion_flutter_charts: ^21.2.10
+  intl: ^0.18.0
+  syncfusion_flutter_core: ^21.2.0
 
 dev_dependencies:
   flutter_test:

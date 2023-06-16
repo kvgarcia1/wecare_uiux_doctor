@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './sessionDetailPage.dart';
 // import './widgets/sessionList.dart';
 
 class SessionDates{
@@ -9,12 +10,12 @@ class SessionDates{
   SessionDates({required this.number,required this.day,required this.date,required this.time});
 }
 
-class SessionPage extends StatefulWidget {
+class PatientSessionListPage extends StatefulWidget {
   @override
-  State<SessionPage> createState() => _SessionPageState();
+  State<PatientSessionListPage> createState() => _PatientSessionListPageState();
 }
 
-class _SessionPageState extends State<SessionPage> {
+class _PatientSessionListPageState extends State<PatientSessionListPage> {
   List<SessionDates> sessionDates = [
     SessionDates(number: "1", day: "THU", date: "June 8", time: "2:30 PM"),
     SessionDates(number: "2", day: "SAT", date: "June 10", time: "10:00 AM"),
@@ -25,6 +26,25 @@ class _SessionPageState extends State<SessionPage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(50.0),
+        child: AppBar(
+          title: const Text('Session Records'),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back,color: Color(0xFF7B7B7B)),
+            onPressed: (){Navigator.pop(context);},
+          ),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.settings),
+              onPressed: (){},
+            )
+          ],
+          backgroundColor: Color(0xFFF9F9F9),
+          foregroundColor: Color(0xFF7B7B7B),
+          scrolledUnderElevation: 0.0,
+        ),
+      ),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
@@ -62,7 +82,10 @@ class _SessionPageState extends State<SessionPage> {
                   subtitle: Text(sessionDates[index].time, style: TextStyle(fontFamily: 'ProximaNova', fontSize: 16)),
                   tileColor: Colors.white,
                   textColor: Color(0xFF7B7B7B),
-                  onTap: (){}
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context){return SessionDetailPage();
+                  }));
+                  }
                 );
               },
               separatorBuilder: (context, index) {
