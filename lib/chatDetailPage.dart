@@ -1,24 +1,28 @@
 import 'package:flutter/material.dart';
 
+
 class ChatMessage{
   String messageContent;
   String messageType;
   ChatMessage({required this.messageContent, required this.messageType});
 }
 
+
 class ChatDetailPage extends StatefulWidget{
   @override
   State<ChatDetailPage> createState() => _ChatDetailPageState();
 }
 
+
 class _ChatDetailPageState extends State<ChatDetailPage> {
   List<ChatMessage> messages = [
-    ChatMessage(messageContent: "Hey, Kristine! How are you?", messageType: "receiver"),
-    ChatMessage(messageContent: "Sending you the details for our video call meeting for your session later.", messageType: "receiver"),
-    ChatMessage(messageContent: "Click the following link to join the meeting:\nhttps://meet.jit.si/123456789\n\n=====\n\nJust want to dial in on your phone?\n\nDial-in: +1.512.647.1431 PIN: 451671292#\n\nClick this link to see the dial in phone numbers for this meeting \nhttps://meet.jit.si/static/dialInInfo.html?room=123456789", messageType: "receiver"),
-    ChatMessage(messageContent: "Got this, Doc! See you later!", messageType: "sender"),
-    
+    ChatMessage(messageContent: "Hey, Kristine! How are you?", messageType: "sender"),
+    ChatMessage(messageContent: "Sending you the details for our video call meeting for your session later.", messageType: "sender"),
+    ChatMessage(messageContent: "Click the following link to join the meeting:\nhttps://meet.jit.si/123456789\n\n=====\n\nJust want to dial in on your phone?\n\nDial-in: +1.512.647.1431 PIN: 451671292#\n\nClick this link to see the dial in phone numbers for this meeting \nhttps://meet.jit.si/static/dialInInfo.html?room=123456789", messageType: "sender"),
+    ChatMessage(messageContent: "Got this, Doc! See you later!", messageType: "receiver"),
+   
   ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +45,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                 SizedBox(width: 2,),
                 CircleAvatar(
                   maxRadius: 20,
-                  backgroundImage: AssetImage('assets/images/userImage1.jpg'),
+                  backgroundImage: AssetImage('assets/images/profile.png'),
                 ),
                 SizedBox(width: 12,),
                 Expanded(
@@ -49,7 +53,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("Jane Russel",style: TextStyle(fontSize: 16 ,fontWeight: FontWeight.w600, fontFamily: 'OpenSans', color: Color(0xFF7B7B7B))),
+                      Text("Kristine Mae Garcia",style: TextStyle(fontSize: 16 ,fontWeight: FontWeight.w600, fontFamily: 'OpenSans', color: Color(0xFF7B7B7B))),
                       SizedBox(height: 6,),
                       Text("Online",style: TextStyle(color: Color(0xFF7B7B7B), fontSize: 13, fontFamily: 'OpenSans')),
                     ],
@@ -126,7 +130,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                     child: Icon(Icons.send,color: Color(0xFFF9F9F9),size: 18,),
                   ),
                 ],
-                
+               
               ),
             ),
           ),

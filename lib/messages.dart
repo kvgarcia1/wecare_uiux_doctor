@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './widgets/conversationList.dart';
 
+
 class ChatUsers{
   String name;
   String messageText;
@@ -9,29 +10,33 @@ class ChatUsers{
   ChatUsers({required this.name,required this.messageText,required this.imageURL,required this.time});
 }
 
+
 class MessagesPage extends StatefulWidget {
   const MessagesPage({Key? key}) : super(key: key);
+
+
 
 
   @override
   State<MessagesPage> createState() => _MessagesPageState();
 }
 
+
 class _MessagesPageState extends State<MessagesPage> {
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "Dr. Jane Russel", messageText: "Got this, Doc! See you later!", imageURL: "assets/images/userImage1.jpg", time: "Now"),
-    ChatUsers(name: "Dr. Gladys Murphy", messageText: "This is noted!", imageURL: "assets/images/userImage2.jpg", time: "Yesterday"),
-    ChatUsers(name: "Dr. Jorge Henry", messageText: "Click the following link to join", imageURL: "assets/images/userImage3.jpg", time: "1 Jun"),
+    ChatUsers(name: "Kristine Mae Garcia", messageText: "Got this, Doc! See you later!", imageURL: "assets/images/profile.png", time: "Now"),
+    ChatUsers(name: "Ma. Colline Foralan", messageText: "This is noted!", imageURL: "assets/images/profile1.png", time: "Yesterday"),
+    ChatUsers(name: "Ian Rodrigo Seguano", messageText: "Click the following link to join", imageURL: "assets/images/profile2.png", time: "1 Jun"),
     // ChatUsers(name: "Philip Fox", messageText: "Busy! Call me in 20 mins", imageURL: "images/userImage4.jpeg", time: "28 Mar"),
     // ChatUsers(name: "Debra Hawkins", messageText: "Thankyou, It's awesome", imageURL: "images/userImage5.jpeg", time: "23 Mar"),
     // ChatUsers(name: "Jacob Pena", messageText: "will update you in evening", imageURL: "images/userImage6.jpeg", time: "17 Mar"),
     // ChatUsers(name: "Andrey Jones", messageText: "Can you please share the file?", imageURL: "images/userImage7.jpeg", time: "24 Feb"),
     // ChatUsers(name: "John Wick", messageText: "How are you?", imageURL: "images/userImage8.jpeg", time: "18 Feb"),
   ];
-  
+ 
   @override
   Widget build(BuildContext context) {
-  
+ 
     return Scaffold(
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),

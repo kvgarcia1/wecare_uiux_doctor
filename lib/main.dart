@@ -46,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
   HomePage(),
   ProfilePage(),
   GeneratorPage(),
-  SessionPage(),
   MessagesPage(),
 ];
 
@@ -94,13 +93,10 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.person_outline),
             label: "Profile",
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.monitor_heart_outlined),
-            label: "Dashboard",
-          ),
+          
           BottomNavigationBarItem(
             icon: Icon(UniconsLine.stethoscope),
-            label: "Session",
+            label: "Records",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.message_outlined),
@@ -171,9 +167,9 @@ class HomePage extends StatelessWidget {
                             fontFamily: 'ProximaNova'
                           ),
                           children: <TextSpan>[
-                            TextSpan(text: "Upcoming Session", style: TextStyle(color: Color(0xFFFF0000), fontWeight: FontWeight.w600, fontSize: 20)),
+                            TextSpan(text: "Ongoing Session", style: TextStyle(color: Color(0xFFFF0000), fontWeight: FontWeight.w600, fontSize: 20)),
                             TextSpan(text: "\n\n", style: TextStyle(fontSize:5)),
-                            TextSpan(text: "You have a scheduled session today. Click the button below to proceed to Session tab.",  style: TextStyle(fontFamily: 'OpenSans', fontSize: 15)),
+                            TextSpan(text: "You have an ongoing session today. Click the button below to proceed to Session tab.",  style: TextStyle(fontFamily: 'OpenSans', fontSize: 15)),
                           ]
                         )
                       ),
@@ -194,7 +190,7 @@ class HomePage extends StatelessWidget {
                           foregroundColor: Colors.white,
                           side: BorderSide.none, shape: const StadiumBorder(),
                         ),
-                        child: Text('   Start   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                        child: Text('   Go to Session   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                       )
                     )
                   ],
@@ -236,9 +232,9 @@ class HomePage extends StatelessWidget {
                                   fontFamily: 'ProximaNova'
                                 ),
                                 children: <TextSpan>[
-                                  TextSpan(text: "Connectivity", style: TextStyle(color: Color(0xFFFF0000), fontWeight: FontWeight.w600, fontSize: 20)),
+                                  TextSpan(text: "Assign Device", style: TextStyle(color: Color(0xFFFF0000), fontWeight: FontWeight.w600, fontSize: 20)),
                                   TextSpan(text: "\n\n", style: TextStyle(fontSize:5)),
-                                  TextSpan(text: "Device is connected.",  style: TextStyle(fontFamily: 'OpenSans', fontSize: 15)),
+                                  TextSpan(text: "Click below to assign a device to patient.",  style: TextStyle(fontFamily: 'OpenSans', fontSize: 15)),
                                 ]
                               )
                             ),
@@ -254,7 +250,7 @@ class HomePage extends StatelessWidget {
                                 foregroundColor: Color(0xFF7B7B7B),
                                 side: BorderSide.none, shape: const StadiumBorder(),
                               ),
-                              child: Text(' Connect ', style: TextStyle(fontFamily:'OpenSans', fontSize: 15)),
+                              child: Text(' Assign ', style: TextStyle(fontFamily:'OpenSans', fontSize: 15)),
                             )
                           )
                         ],

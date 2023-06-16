@@ -34,34 +34,7 @@ class CurrentSessionPage extends StatelessWidget {
         
       ),
 
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xFFF9F9F9),
-        unselectedFontSize: 15,
-        selectedFontSize: 15,
-        selectedItemColor: Color(0xFF7B7B7B),
-        unselectedItemColor: Color(0xFF7B7B7B),
-        elevation: 0.0,
-        
-    items: const <BottomNavigationBarItem>[
-      BottomNavigationBarItem(
-        icon: Icon(Icons.stop_circle_outlined),
-        
-        label: 'End',
-      ),
 
-      BottomNavigationBarItem(
-        icon: Icon(Icons.pause_circle_filled_outlined),
-        label: 'Pause',
-      ),
-
-      BottomNavigationBarItem(
-        icon: Icon(Icons.play_circle_fill_outlined),
-        label: 'Start',
-      ),
-    ],
-      ),
-
-      
       
       body: SingleChildScrollView(
         
