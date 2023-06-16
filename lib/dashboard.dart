@@ -67,7 +67,7 @@ class _PatientDashboardPageState extends State<PatientDashboardPage> {
                       alignment: Alignment.center,
                       margin: const EdgeInsets.all(5.0),
                       padding: const EdgeInsets.all(20.0),
-                      height: 140,
+                      height: 100,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.white,
@@ -82,45 +82,16 @@ class _PatientDashboardPageState extends State<PatientDashboardPage> {
                               fontFamily: 'ProximaNova'
                             ),
                             children: <TextSpan>[
-                              TextSpan(text: "Sessions", style: TextStyle(color: Color(0xFFFF0000), fontWeight: FontWeight.w600, fontSize: 25,)),
-                              TextSpan(text: "\n\n", style: TextStyle(fontSize:5)),
-                              TextSpan(text: "12",  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w600)),
-                            ]
+                        TextSpan(text: "Rehabilitation Progress", style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF56AEFF), fontSize: 18, fontFamily: 'OpenSans')),
+                        TextSpan(text: "\n", style: TextStyle(fontSize:5)),
+                        TextSpan(text: "12 of 15",  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600)),
+                      ]
                           )
                         ),
                       ),
                     ),
                   ),
-                  Expanded(
-                    flex: 5,
-                    child: Container(
-                      alignment: Alignment.center,
-                      margin: const EdgeInsets.all(5.0),
-                      padding: const EdgeInsets.all(20.0),
-                      height: 140,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.white,
-                      ),
-                      child: Align(      
-                        alignment: Alignment.center,
-                        child: RichText(
-                          textAlign: TextAlign.center,
-                          text: TextSpan(
-                            style: TextStyle(
-                              color: Color(0xFF7B7B7B),
-                              fontFamily: 'ProximaNova'
-                            ),
-                            children: <TextSpan>[
-                              TextSpan(text: "Sessions", style: TextStyle(color: Color(0xFFFF0000), fontWeight: FontWeight.w600, fontSize: 25,)),
-                              TextSpan(text: "\n\n", style: TextStyle(fontSize:5)),
-                              TextSpan(text: "12",  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w600)),
-                            ]
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
+                 
                 ]
               ),
               const Divider(

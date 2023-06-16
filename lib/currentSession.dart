@@ -257,7 +257,7 @@ class _CurrentSessionPageState extends State<CurrentSessionPage> {
                 ],
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               SizedBox(
                 height: 250,
                 child: SfCartesianChart(
@@ -295,7 +295,7 @@ class _CurrentSessionPageState extends State<CurrentSessionPage> {
                   )
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -307,7 +307,7 @@ class _CurrentSessionPageState extends State<CurrentSessionPage> {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) => CurrentSessionPage()));
                               },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFFE56AEFF),
+                          backgroundColor: Color(0xFF7B7B7B),
                           foregroundColor: Colors.white,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),

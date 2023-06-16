@@ -73,6 +73,7 @@ class _SessionDetailPageState extends State<SessionDetailPage> {
               ),
               const SizedBox(height: 30),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     width:110,
@@ -125,7 +126,7 @@ class _SessionDetailPageState extends State<SessionDetailPage> {
                           fontFamily: 'ProximaNova'
                         ),
                         children: <TextSpan>[
-                          TextSpan(text: "Avg Blood Pressure", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                          TextSpan(text: "Avg BP", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
                           TextSpan(text: "\n"),
                           TextSpan(text: "170", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 40)),
                           TextSpan(text: "\n"),
@@ -138,6 +139,7 @@ class _SessionDetailPageState extends State<SessionDetailPage> {
               ),
               const SizedBox(height: 20),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     width:175,

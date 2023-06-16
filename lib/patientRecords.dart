@@ -45,7 +45,7 @@ class PatientRecordsPage extends StatelessWidget {
                     width:170,
                       height:330,
                       decoration: BoxDecoration(
-                      color: Color(0xFFA0D9F6),
+                      color: Colors.white,
                       borderRadius: BorderRadius.vertical(top: Radius.circular(30.0),bottom: Radius.circular(30.0)),
                     ),
                     child: Stack(
@@ -67,7 +67,7 @@ class PatientRecordsPage extends StatelessWidget {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
                           },
                             style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -82,7 +82,7 @@ class PatientRecordsPage extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
                             },
                             style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                             ),
@@ -97,7 +97,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -114,7 +114,7 @@ class PatientRecordsPage extends StatelessWidget {
                     width:170,
                       height:330,
                       decoration: BoxDecoration(
-                      color: Color(0xFFA0D9F6),
+                      color: Colors.white,
                       borderRadius: BorderRadius.vertical(top: Radius.circular(30.0),bottom: Radius.circular(30.0)),
                     ),
                     child: Stack(
@@ -122,7 +122,7 @@ class PatientRecordsPage extends StatelessWidget {
                         Container(
                           alignment: Alignment.topCenter,
                           padding: EdgeInsets.only(top:15),
-                          child: Image.asset('assets/images/profile.png',scale: 5),
+                          child: Image.asset('assets/images/profile1.png',scale: 5),
                         ),
                         Container(
                           alignment: Alignment.center,  
@@ -136,7 +136,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -151,7 +151,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -166,7 +166,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -188,7 +188,7 @@ class PatientRecordsPage extends StatelessWidget {
                     width:170,
                       height:330,
                       decoration: BoxDecoration(
-                      color: Color(0xFFA0D9F6),
+                      color: Colors.white,
                       borderRadius: BorderRadius.vertical(top: Radius.circular(30.0),bottom: Radius.circular(30.0)),
                     ),
                     child: Stack(
@@ -210,7 +210,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -225,7 +225,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
                                 },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
@@ -240,7 +240,7 @@ class PatientRecordsPage extends StatelessWidget {
                                   Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFFF0000),
+                            backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
                           ),
