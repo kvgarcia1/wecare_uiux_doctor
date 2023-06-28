@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class ChatMessage{
@@ -23,16 +22,16 @@ class _SessionDetailPageState extends State<SessionDetailPage> {
     _chartData = getChartData();
     _tooltipBehavior = TooltipBehavior(enable: true);
     _zoomPanBehavior = ZoomPanBehavior(
-        enablePinching: true,
-        enableDoubleTapZooming: true,
-        enableSelectionZooming: true,
-        selectionRectBorderColor: Colors.red,
-        selectionRectBorderWidth: 2,
-        selectionRectColor: Colors.grey,
-        enablePanning: true,
-        zoomMode: ZoomMode.x,
-        enableMouseWheelZooming: true,
-        maximumZoomLevel: 0.7);
+      enablePinching: true,
+      enableDoubleTapZooming: true,
+      enableSelectionZooming: true,
+      selectionRectBorderColor: Colors.red,
+      selectionRectBorderWidth: 2,
+      selectionRectColor: Colors.grey,
+      enablePanning: true,
+      zoomMode: ZoomMode.x,
+      enableMouseWheelZooming: true,
+      maximumZoomLevel: 0.7);
     super.initState();
   }
 
@@ -59,6 +58,7 @@ class _SessionDetailPageState extends State<SessionDetailPage> {
         ),
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -189,8 +189,6 @@ class _SessionDetailPageState extends State<SessionDetailPage> {
                 child: SfCartesianChart(
                   title: ChartTitle(text: 'Heart Rate (BPM)'),
                   legend: Legend(isVisible: false),
-                  // margin: EdgeInsets.all(15),
-                  // backgroundColor: Colors.blue,
                   plotAreaBorderColor: Color((0xFF56AEFF)),
                   plotAreaBackgroundColor: Colors.white,
                   tooltipBehavior: _tooltipBehavior,

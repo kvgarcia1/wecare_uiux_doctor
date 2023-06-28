@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:unicons/unicons.dart';
 
 
 class ProfilePage extends StatelessWidget {
@@ -11,6 +9,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -45,7 +44,6 @@ class ProfilePage extends StatelessWidget {
               Text("angelicashaleneestera@gmail.com", style: TextStyle(color: Colors.black,fontSize: 15, fontFamily: 'OpenSans')),
               const SizedBox(height: 20),
 
-
               // Edit Profile
               SizedBox(
                 width: 200,
@@ -61,336 +59,158 @@ class ProfilePage extends StatelessWidget {
               ),
               const SizedBox(height: 15),
               const Divider(
-               
                 thickness: 0.5,
                 color: Color(0xFF7B7B7B),
                 indent: 0.0,
                 endIndent: 0.0,
-
-
               ),
               const SizedBox(height: 20),
-
-
-             
-             
-
-
-         
-
-
-
-
               Row(
                 children: [
                   Container(
                     width:150,
                     alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                             
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Specialty", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "General Medicine", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                 
-                                ]
-                              )
-                            ),
-                   
-
-
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          color: Color(0xFF7B7B7B),
+                          fontFamily: 'ProximaNova'
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(text: "Specialty", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                          TextSpan(text: "\n"),
+                          TextSpan(text: "General Medicine", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                        ]
+                      )
+                    ),
                   ),
-
-
-                 
-
-
                   Container(
-                     width:170,
-
-
+                    width:170,
                     alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Experience", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "2 years", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                 
-
-
-                               
-                                ]
-                              )
-                            ),
-
-
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          color: Color(0xFF7B7B7B),
+                          fontFamily: 'ProximaNova'
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(text: "Experience", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                          TextSpan(text: "\n"),
+                          TextSpan(text: "2 years", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                        ]
+                      )
+                    ),
                   ),
-
-
-
-
-                 
                 ],
-
-
-
-
               ),
-
-
               const SizedBox(height: 20),
-
-
-
-
-
-
-
-
               Row(
                 children: [
                   Container(
                     width:150,
                     alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                             
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Subspecialty", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "General Physician", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                 
-                                ]
-                              )
-                            ),
-                   
-
-
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          color: Color(0xFF7B7B7B),
+                          fontFamily: 'ProximaNova'
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(text: "Subspecialty", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                          TextSpan(text: "\n"),
+                          TextSpan(text: "General Physician", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                        ]
+                      )
+                    ),
                   ),
-
-
-                 
-
-
                   Container(
-                     width:170,
-
-
+                    width:170,
                     alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Consultation Availability", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "Online & In-Person", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                 
-
-
-                               
-                                ]
-                              )
-                            ),
-
-
+                    child: RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          color: Color(0xFF7B7B7B),
+                          fontFamily: 'ProximaNova'
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(text: "Consultation Availability", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                          TextSpan(text: "\n"),
+                          TextSpan(text: "Online & In-Person", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                        ]
+                      )
+                    ),
                   ),
-
-
-
-
-                 
                 ],
-
-
-
-
               ),
-
-
               const SizedBox(height: 20),
-
-
               Container(
-                   
-
-
-                    alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Online Clinic", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "Mon-Wed-Fri, 10:00AM - 5:00PM", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                 
-
-
-                               
-                                ]
-                              )
-                            ),
-
-
-                  ),
-
-
-                  const SizedBox(height: 20),
-
-
-                   const Divider(
-               
+                alignment: Alignment.topLeft,
+                child: RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      color: Color(0xFF7B7B7B),
+                      fontFamily: 'ProximaNova'
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(text: "Online Clinic", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                      TextSpan(text: "\n"),
+                      TextSpan(text: "Mon-Wed-Fri, 10:00AM - 5:00PM", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                    ]
+                  )
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Divider(
                 thickness: 0.5,
                 color: Color(0xFF7B7B7B),
                 indent: 0.0,
                 endIndent: 0.0,
-
-
               ),
               const SizedBox(height: 20),
-
-
-
-
               Container(
-                   
-
-
-                    alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Certifications", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n\n\n\n\n\n\n"),
-                                 
-                                 
-
-
-                               
-                                ]
-                              )
-                            ),
-
-
-                  ),
-
-
-
-
-                  const SizedBox(height: 20),
-
-
-                   const Divider(
-               
-                thickness: 0.5,
-                color: Color(0xFF7B7B7B),
-                indent: 0.0,
-                endIndent: 0.0,
-
-
+                alignment: Alignment.topLeft,
+                child: RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      color: Color(0xFF7B7B7B),
+                      fontFamily: 'ProximaNova'
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(text: "Certifications", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                      TextSpan(text: "\n\n\n\n\n\n\n"),  
+                    ]
+                  )
+                ),
               ),
               const SizedBox(height: 20),
-
-
-
-
+              const Divider(               
+                  thickness: 0.5,
+                  color: Color(0xFF7B7B7B),
+                  indent: 0.0,
+                  endIndent: 0.0,
+              ),
+              const SizedBox(height: 20),
               Container(
-                   
-
-
-                    alignment: Alignment.topLeft,
-                            child: RichText(
-                              //textAlign: TextAlign.center,
-                              text: TextSpan(
-                                style: TextStyle(
-                                  color: Color(0xFF7B7B7B),
-                                  fontFamily: 'ProximaNova'
-                                ),
-                                children: <TextSpan>[
-                                  TextSpan(text: "Education", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "University of the Philippines Diliman", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                  TextSpan(text: "\n"),
-                                  TextSpan(text: "University of the Philippines College of Medicine", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
-                                 
-                                 
-                                 
-
-
-                               
-                                ]
-                              )
-                            ),
-
-
-                  ),
-
-
-
-
-
-
-
-
-             
-
-
-
-
-             
-
-
-             
+                alignment: Alignment.topLeft,
+                child: RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      color: Color(0xFF7B7B7B),
+                      fontFamily: 'ProximaNova'
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(text: "Education", style: TextStyle( fontWeight: FontWeight.w600, fontSize: 18)),
+                      TextSpan(text: "\n"),
+                      TextSpan(text: "University of the Philippines Diliman", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                      TextSpan(text: "\n"),
+                      TextSpan(text: "University of the Philippines College of Medicine", style: TextStyle( fontFamily:'OpenSans', fontSize: 15)),
+                    ]
+                  )
+                ),
+              ),
             ],
-           
           ),
         ),
-
-
-       
-
-
-        // MENU
-
-
-       
-
-
-
-
-
-
-
-
       ),
     );
   }

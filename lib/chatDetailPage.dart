@@ -65,6 +65,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
           ),
         ),
       ),
+      
       // Bottom Text Box
       body: Stack(
         children: <Widget>[
@@ -130,7 +131,6 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                     child: Icon(Icons.send,color: Color(0xFFF9F9F9),size: 18,),
                   ),
                 ],
-               
               ),
             ),
           ),

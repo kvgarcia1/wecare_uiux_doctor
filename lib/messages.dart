@@ -26,12 +26,7 @@ class _MessagesPageState extends State<MessagesPage> {
   List<ChatUsers> chatUsers = [
     ChatUsers(name: "Kristine Mae Garcia", messageText: "Got this, Doc! See you later!", imageURL: "assets/images/profile.png", time: "Now"),
     ChatUsers(name: "Ma. Colline Foralan", messageText: "This is noted!", imageURL: "assets/images/profile1.png", time: "Yesterday"),
-    ChatUsers(name: "Ian Rodrigo Seguano", messageText: "Click the following link to join", imageURL: "assets/images/profile2.png", time: "1 Jun"),
-    // ChatUsers(name: "Philip Fox", messageText: "Busy! Call me in 20 mins", imageURL: "images/userImage4.jpeg", time: "28 Mar"),
-    // ChatUsers(name: "Debra Hawkins", messageText: "Thankyou, It's awesome", imageURL: "images/userImage5.jpeg", time: "23 Mar"),
-    // ChatUsers(name: "Jacob Pena", messageText: "will update you in evening", imageURL: "images/userImage6.jpeg", time: "17 Mar"),
-    // ChatUsers(name: "Andrey Jones", messageText: "Can you please share the file?", imageURL: "images/userImage7.jpeg", time: "24 Feb"),
-    // ChatUsers(name: "John Wick", messageText: "How are you?", imageURL: "images/userImage8.jpeg", time: "18 Feb"),
+    ChatUsers(name: "Ian Rodrigo Seguano", messageText: "Click the following link to join", imageURL: "assets/images/profile2.png", time: "1 Jun")
   ];
  
   @override
@@ -54,10 +49,10 @@ class _MessagesPageState extends State<MessagesPage> {
                   fillColor: Color(0xFFE7E9EC),
                   contentPadding: EdgeInsets.all(8),
                   enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(
-                          color: Color(0xFFE7E9EC)
-                      )
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: BorderSide(
+                        color: Color(0xFFE7E9EC)
+                    )
                   ),
                 ),
               ),

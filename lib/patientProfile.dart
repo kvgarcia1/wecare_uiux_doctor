@@ -26,6 +26,7 @@ class PatientProfilePage extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Container(
           padding: const EdgeInsets.all(20),
           child: Column(
@@ -66,72 +67,44 @@ class PatientProfilePage extends StatelessWidget {
                 endIndent: 0.0,
               ),
               const SizedBox(height: 20),
-
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("Personal Information", style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800,color: Color(0xFF4D4D4D))),
               ),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("    Birthday:                            July 27, 1990\n    Age:                                    33 years old\n    Occupation:                       IT Specialist\n    Height:                               5' 3''\n    Weight:                              63 kg", style: TextStyle(fontSize: 15, fontFamily: 'OpenSans',color: Color(0xFF7B7B7B))),
               ),
-
               const SizedBox(height: 20),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("Contact Information", style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800,color: Color(0xFF4D4D4D))),
               ),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("    Phone Number:               09123456789\n    Address:                            Quezon City\n    In Case of Emergency:     Juan Dela Cruz\n                                               09987654321", style: TextStyle(fontSize: 15, fontFamily: 'OpenSans',color: Color(0xFF7B7B7B))),
               ),
-
               const SizedBox(height: 20),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("Caregiver Information", style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800,color: Color(0xFF4D4D4D))),
               ),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("    Name:                                Juanito Dela Cruz\n    Phone Number:               09567891234", style: TextStyle(fontSize: 15, fontFamily: 'OpenSans',color: Color(0xFF7B7B7B))),
               ),
-
               const SizedBox(height: 20),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("Medical Information", style: TextStyle(fontSize: 20, fontFamily: 'ProximaNova', fontWeight: FontWeight.w800, color: Color(0xFF4D4D4D))),
               ),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("    Physiatric History\n    Current Medicines Taken\n    Pertinent Ancillary\n    Medical Management\n    Rehabilitation Goals\n    Rehabilitation Program\n", style: TextStyle(fontSize: 15, fontFamily: 'OpenSans',color: Color(0xFF7B7B7B))),
               ),
-
-
-              
-
-              
             ],
-            
           ),
         ),
-
-        
-
-        // MENU
-
-       
-
-
-
-
       ),
     );
   }

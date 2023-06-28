@@ -178,7 +178,7 @@ class _PatientDashboardPageState extends State<PatientDashboardPage> {
               SizedBox(
                 height: 250,
                 child: SfCartesianChart(
-                  title: ChartTitle(text: 'Blood PRessure (MMHG)'),
+                  title: ChartTitle(text: 'Blood Pressure (MMHG)'),
                   legend: Legend(isVisible: false),
                   // margin: EdgeInsets.all(15),
                   // backgroundColor: Colors.blue,

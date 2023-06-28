@@ -92,7 +92,6 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.person_outline),
             label: "Profile",
           ),
-          
           BottomNavigationBarItem(
             icon: Icon(UniconsLine.stethoscope),
             label: "Records",
@@ -141,12 +140,6 @@ class HomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
-                  // boxShadow: [BoxShadow(
-                  //   color: Colors.grey.withOpacity(0.5),
-                  //   spreadRadius: 1,
-                  //   blurRadius: 7,
-                  //   offset: Offset(0, 2),
-                  // )],
                 ),
                 child: Stack(
                   children: <Widget>[
@@ -178,8 +171,8 @@ class HomePage extends StatelessWidget {
                       height:250,
                       child: ElevatedButton(
                         onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => CurrentSessionPage()));
-                              },
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => CurrentSessionPage()));
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xFFFF0000),
                           foregroundColor: Colors.white,
@@ -191,7 +184,6 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              
               Container(
                 alignment: Alignment.center,
                 margin: const EdgeInsets.all(5.0),
@@ -200,12 +192,6 @@ class HomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
-                  // boxShadow: [BoxShadow(
-                  //   color: Colors.grey.withOpacity(0.5),
-                  //   spreadRadius: 1,
-                  //   blurRadius: 7,
-                  //   offset: Offset(0, 2),
-                  // )],
                 ),
                 child: Stack(
                   children: <Widget>[

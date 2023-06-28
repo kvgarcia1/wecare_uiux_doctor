@@ -27,10 +27,10 @@ class PatientRecordsPage extends StatelessWidget {
                     fillColor: Color(0xFFE7E9EC),
                     contentPadding: EdgeInsets.all(8),
                     enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
-                            color: Color(0xFFE7E9EC)
-                        )
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: BorderSide(
+                          color: Color(0xFFE7E9EC)
+                      )
                     ),
                   ),
                 ),
@@ -63,15 +63,15 @@ class PatientRecordsPage extends StatelessWidget {
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:80),
                           child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
-                          },
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
+                            },
                             style: ElevatedButton.styleFrom(
                             backgroundColor: Color(0xFF56AEFF),
                             foregroundColor: Colors.white,
                             side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text('    Profile    ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            ),
+                            child: Text('    Profile    ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                         Container(
@@ -82,9 +82,9 @@ class PatientRecordsPage extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
                             },
                             style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
                             ),
                             child: Text('    Records   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
@@ -93,15 +93,15 @@ class PatientRecordsPage extends StatelessWidget {
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:260),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text(' Dashboard ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text(' Dashboard ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                       ],
@@ -112,8 +112,8 @@ class PatientRecordsPage extends StatelessWidget {
                   ),
                   Container(
                     width:170,
-                      height:330,
-                      decoration: BoxDecoration(
+                    height:330,
+                    decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.vertical(top: Radius.circular(30.0),bottom: Radius.circular(30.0)),
                     ),
@@ -132,45 +132,45 @@ class PatientRecordsPage extends StatelessWidget {
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:80),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text('    Profile    ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text('    Profile    ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                         Container(
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:170),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text('    Records   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text('    Records   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                         Container(
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:260),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text(' Dashboard ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
+                              },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text(' Dashboard ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                       ],
@@ -186,8 +186,8 @@ class PatientRecordsPage extends StatelessWidget {
                   ),
                   Container(
                     width:170,
-                      height:330,
-                      decoration: BoxDecoration(
+                    height:330,
+                    decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.vertical(top: Radius.circular(30.0),bottom: Radius.circular(30.0)),
                     ),
@@ -206,45 +206,45 @@ class PatientRecordsPage extends StatelessWidget {
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:80),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text('    Profile    ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientProfilePage()));
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text('    Profile    ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                         Container(
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:170),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
-                                },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text('    Records   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientSessionListPage()));
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text('    Records   ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                         Container(
                           alignment: Alignment.center,
                           padding: EdgeInsets.only(top:260),
                           child: ElevatedButton(
-                          onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF56AEFF),
-                            foregroundColor: Colors.white,
-                            side: BorderSide.none, shape: const StadiumBorder(),
-                          ),
-                          child: Text(' Dashboard ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PatientDashboardPage()));
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFF56AEFF),
+                              foregroundColor: Colors.white,
+                              side: BorderSide.none, shape: const StadiumBorder(),
+                            ),
+                            child: Text(' Dashboard ', style: TextStyle(fontFamily:'OpenSans', fontSize:15)),
                           )
                         ),
                       ],

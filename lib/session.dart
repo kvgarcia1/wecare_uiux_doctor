@@ -61,10 +61,10 @@ class _PatientSessionListPageState extends State<PatientSessionListPage> {
                   fillColor: Color(0xFFE7E9EC),
                   contentPadding: EdgeInsets.all(8),
                   enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(
-                          color: Color(0xFFE7E9EC)
-                      )
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: BorderSide(
+                        color: Color(0xFFE7E9EC)
+                    )
                   ),
                 ),
               ),
@@ -83,8 +83,7 @@ class _PatientSessionListPageState extends State<PatientSessionListPage> {
                   tileColor: Colors.white,
                   textColor: Color(0xFF7B7B7B),
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context){return SessionDetailPage();
-                  }));
+                    Navigator.push(context, MaterialPageRoute(builder: (context){return SessionDetailPage();}));
                   }
                 );
               },
